@@ -6,7 +6,9 @@ import userData from "../../userData.json";
 import friends from "../../friends.json";
 import transactions from "../../transactions.json";
 
-const App = () => {
+import css from "./App.module.css";
+
+export default function App() {
   return (
     <>
       <Profile
@@ -20,6 +22,4 @@ const App = () => {
       <TransactionHistory items={transactions} />
     </>
   );
-};
-
-export default App;
+}

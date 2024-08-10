@@ -1,14 +1,14 @@
+import css from "./Profile.module.css";
+
 export default function Profile({
-  profile: {
-    name,
-    tag,
-    location,
-    image,
-    stats: { followers, views, likes },
-  },
+  name,
+  tag,
+  location,
+  image,
+  stats: { followers, views, likes },
 }) {
   return (
-    <div>
+    <div className="css.container">
       <div>
         <img src={image} alt="User avatar" />
         <p>{name}</p>
