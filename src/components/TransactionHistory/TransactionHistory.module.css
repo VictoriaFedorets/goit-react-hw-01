@@ -1,0 +1,46 @@
+.table {
+  width: 400px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  overflow: hidden;
+  text-align: center;
+}
+
+.tableHead {
+  color: white;
+  font-size: 15px;
+  background-color: rgb(48, 48, 48);
+}
+
+.tableHead th {
+  border-right: 1px solid black;
+}
+
+.tableBody td {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  font-size: 15px;
+  flex: 1;
+}
+
+.tableBody1 {
+  text-transform: capitalize;
+}
+
+.tableBody td:first-child {
+  text-align: left;
+  padding-left: 40px;
+}
+
+.tableBody tr:nth-child(even) {
+  background-color: #cac8c8; /* Светло-серый фон для четных строк */
+}
+
+.tableBody tr:nth-child(odd) {
+  background-color: #ffffff; /* Белый фон для нечетных строк */
+}
+
+/* Дополнительный стиль для последней строки */
+.tableBody tr:last-child td {
+  border-bottom: none;
+}
